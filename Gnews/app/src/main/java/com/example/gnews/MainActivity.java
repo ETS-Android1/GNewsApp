@@ -56,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
         Call<News> call;
 
         if (keyword.length()>0){
-            call = apiInterface.getNewsSearch(keyword,API_KEY);
+            call = apiInterface.getNewsSearch(keyword,"ta",API_KEY);
         }
         else{
-            call = apiInterface.getNews(API_KEY);
+            call = apiInterface.getNews("ta",API_KEY);
         }
 
 

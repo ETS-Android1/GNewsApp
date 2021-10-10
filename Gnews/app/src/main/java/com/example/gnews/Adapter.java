@@ -2,7 +2,7 @@ package com.example.gnews;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.annotati on.NonNull;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -110,7 +110,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             itemView.setOnClickListener(this);
             title = itemView.findViewById(R.id.title);
             desc = itemView.findViewById(R.id.desc);
-            author = itemView.findViewById(R.id.author);
             published_ad = itemView.findViewById(R.id.publishedAt);
             source = itemView.findViewById(R.id.source);
             time = itemView.findViewById(R.id.time);

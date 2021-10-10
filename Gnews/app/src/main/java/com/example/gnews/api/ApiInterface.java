@@ -11,12 +11,14 @@ public interface ApiInterface {
 
     @GET("top-headlines")
     Call<News> getNews(
+            @Query("lang") String lang,
             @Query("token") String token
     );
 
     @GET("search")
     Call<News> getNewsSearch(
             @Query("q") String keyword,
+            @Query("lang") String lang,
             @Query("token") String token
     );
 
